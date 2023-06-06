@@ -232,6 +232,7 @@ body {
 }
 
 .row__item {
+  position: relative;
   width: 360px;
   height: 420px;
   display: flex;
@@ -272,20 +273,54 @@ body {
   overflow: hidden;
 }
 
-.overlay::before {
-  content: "";
+.text__overlay {
+  display: none;
   position: absolute;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(77, 90, 229, 0.8);
-  transition: bottom 0.3s ease;
+  width: 296px;
+  height: 96px;
+  left: 32px;
+  top: 40px;
+  transform: translateY(0%);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  transition: transform 10;
 }
 
-.overlay:hover::before {
+.overlay__content {
+  position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(77, 90, 229, 1.8);
+  transition: height 0.6s, opacity 0.6s;
 }
+
+.overlay:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.overlay:hover .text__overlay {
+  display: block;
+}
+
+.row__item:hover .overlay__content {
+  height: 100%;
+}
+
+.row__item:hover .text__overlay {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s 0.6s;
+}
+
 /*! Footer */
 
 .footer__bg {
