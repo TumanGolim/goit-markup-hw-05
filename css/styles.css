@@ -117,6 +117,11 @@ a {
   line-height: 24px;
   letter-spacing: 0.02em;
 }
+.Studio {
+  color: #404bbf;
+  border-bottom: 4px solid #404bbf;
+  padding-bottom: 23px;
+}
 
 /* END NAV SECTION */
 
@@ -284,7 +289,7 @@ a {
   font-size: 16px;
 }
 .social-list-link {
- display: block;
+  display: block;
   background-color: #4d5ae5;
   padding: 8px;
   border-radius: 50%;
