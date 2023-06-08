@@ -12,18 +12,9 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://i.icomoon.io/public/temp/3746535d12/UntitledProject/style-svg.css"
-    />
-    <script
-      defer
-      src="https://i.icomoon.io/public/temp/3746535d12/UntitledProject/svgxuse.js"
-    ></script>
-    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./fonts/style.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/modern-normalize.min.css" />
   </head>
@@ -69,7 +60,9 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button class="primary__button" type="button">Order Service</button>
+          <button class="primary__button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="features__section container">
@@ -311,6 +304,18 @@
         </ul>
       </section>
     </main>
+    <body>
+      <div class="block ">
+        <div class="backdrop is-hidden " data-modal>
+          <div class="moda ">
+            <p></p>
+
+            <button class="clouse" data-modal-close>X</button>
+          </div>
+        </div>
+      </div>
+      <script src="./js/modal.js"></script>
+    </body>
 
     <footer class="footer__bg">
       <div class="container__footer">

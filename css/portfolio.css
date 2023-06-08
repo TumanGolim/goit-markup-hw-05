@@ -132,6 +132,8 @@ body {
 
 .Portfolio{
 color: #404BBF;
+  border-bottom: 4px solid #404bbf;
+  padding-bottom: 23px;
 }
 
 /*! 
