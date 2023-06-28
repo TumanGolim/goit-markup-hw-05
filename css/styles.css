@@ -102,6 +102,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .link:hover {
   color: var(--pressed-state);
 }
@@ -379,6 +380,72 @@ a {
   width: 208px;
   height: 40px;
 }
+
+.email__imput {
+  width: 453px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.subscribe-heading {
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.foter__email {
+  position: relative;
+  top: 16px;
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  background-color: var(--dark);
+}
+
+.footer__Subscribe {
+  cursor: pointer;
+  position: relative;
+  left: 288px;
+  top: -25px;
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  background: var(--iris, #4d5ae5);
+}
+
+.text__Subscribe {
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.emoge__telegram {
+  width: 24px;
+  height: 24px;
+}
+
+.email {
+  position: relative;
+  top: 8px;
+  left: 16px;
+  width: 36px;
+  height: 24px;
+  color: var(--white, #fff);
+  font-size: 12px;
+  font-family: Roboto;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
 /* END FOOTER SECTION */
 
 .backdrop.is-hidden {
@@ -402,7 +469,8 @@ a {
   pointer-events: none;
 }
 .clouse {
-  position:absolute;
+  cursor: pointer;
+  position: absolute;
   width: 24px;
   height: 24px;
   left: 360px;
@@ -410,14 +478,16 @@ a {
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   opacity: 1;
+  border-radius: 15px;
 }
 
 .moda {
   position: fixed;
   width: 408px;
   height: 584px;
-  left: 516px;
-  right: 516px;
+  left: 0;
+  right: 0;
+  margin: auto;
   top: 80px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -428,4 +498,168 @@ a {
 }
 .blockv {
   display: block;
+}
+.moda__h {
+  position: absolute;
+  width: 360px;
+  left: 24px;
+  top: 72px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.moda__reg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 360px;
+  height: 336px;
+  left: 24px;
+  top: 112px;
+  border-radius: 4px;
+}
+
+.moda__name {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 0px;
+  top: 18px;
+  bottom: 0%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.moda__phone {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 0px;
+  top: 84px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.moda__email {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 0px;
+  top: 150px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.moda__comment {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 360px;
+  height: 120px;
+  left: 0px;
+  top: 216px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  resize: none;
+}
+
+.moda__text {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+textarea {
+  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+
+  font-size: 12px;
+  font-family: Roboto;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+}
+
+.moda__p {
+  width: 360px;
+  height: 58px;
+}
+.moda__c {
+  width: 360px;
+  height: 138px;
+}
+
+.send {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 169px;
+  height: 56px;
+  left: 120px;
+  top: 504px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.text__send {
+  width: 105px;
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  flex: none;
+}
+
+.moda__frem {
+  position: absolute;
+  top: 464px;
+  left: 24px;
+  border-radius: 4px;
+}
+
+.moda__chect {
+  width: 338px;
+  height: 16px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #8e8f99;
+  font-size: 12px;
+  font-family: Roboto;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+}
+
+.moda__chec {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 0px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
