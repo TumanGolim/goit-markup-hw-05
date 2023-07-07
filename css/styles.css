@@ -385,9 +385,12 @@ a {
 }
 
 .email__imput {
-  width: 453px;
-  height: 80px;
-  flex-shrink: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .subscribe-heading {
@@ -400,25 +403,51 @@ a {
 }
 
 .foter__email {
-  position: relative;
-  top: 16px;
-  width: 264px;
-  height: 40px;
-  border-radius: 4px;
-  color: var(--white, #fff);
-  border: 1px solid var(--white, #fff);
-  background-color: var(--dark);
+ display: flex; 
+gap: 24px;
+
+
 }
+.foter__lable{
+
+}
+
+.foter__imput{
+width: 264px;
+height: 40px;
+border: 1px solid #ffffff;
+background-color: transparent;
+font-size: 12px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+padding-left: 16px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+color: #ffffff;
+
+}
+
 .footer__Subscribe {
-  cursor: pointer;
-  position: relative;
-  left: 24px;
-  top: 16px;
-  display: inline-flex;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  background: var(--iris, #4d5ae5);
+ min-width: 165px;
+ height: 40px;
+ display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #ffffff;
+cursor: pointer;
+background-color: #4D5AE5;
+border: none;
+border-radius: 4px;
+}
+
+.foter__svg{
+margin-left: 16px;
+
 }
 
 .text__Subscribe {
