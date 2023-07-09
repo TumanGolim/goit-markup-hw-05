@@ -294,11 +294,10 @@
 
     <div class="block">
       <div class="backdrop is-hidden" data-modal>
-        <p class="moda__par">Leave your contacts and we will call you back</p>
         <div class="moda">
           <form>
             <div class="moda__reg">
-              <label class="block__label">Name</label>
+              <label class="block__label" for="user-name">Name</label>
               <div class="moda__input">
                 <input
                   class="block__input"
@@ -312,7 +311,7 @@
               </div>
             </div>
             <div class="moda__reg">
-              <label class="block__label">Email</label>
+              <label class="block__label" for="user-email">Email</label>
               <div class="moda__input">
                 <input type="email" id="user-email" name="user-email" />
                 <svg class="block__svg" width="18" height="24">
@@ -321,7 +320,7 @@
               </div>
             </div>
             <div class="moda__reg">
-              <label class="block__label">Phone</label>
+              <label class="block__label" for="user-phone">Phone</label>
               <div class="moda__input">
                 <input type="tel" id="user-phone" name="user-phone" />
                 <svg class="block__svg" width="18" height="24">
@@ -330,7 +329,7 @@
               </div>
             </div>
             <div class="moda__reg">
-              <label class="block__label">Message</label>
+              <label class="block__label" for="user-message">Comment</label>
               <div class="moda__input">
                 <textarea id="user-message" name="user-message"></textarea>
                 <svg class="block__svg" width="18" height="24">
@@ -348,6 +347,7 @@
             <button class="send">Send</button>
           </form>
         </div>
+        <p class="moda__par">Leave your contacts and we will call you back</p>
       </div>
     </div>
     <script src="./js/modal.js"></script>
