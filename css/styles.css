@@ -512,6 +512,10 @@ a {
   margin-bottom: 8px;
 }
 
+.moda__comment {
+  margin-bottom: 16px;
+}
+
 .moda__par {
   font-weight: 500;
   font-size: 16px;
@@ -536,14 +540,14 @@ a {
 }
 
 .block__input {
-width: 100%;
-height: 40px;
-border: 1px solid rgba(46, 47, 66, 0.4);
-background-color:transparent; 
-padding-left: 38px;
-outline: transparent;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-border-color: #4D5AE5;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4d5ae5;
 }
 
 .block__svg {
@@ -557,6 +561,23 @@ border-color: #4D5AE5;
 
 .moda__input {
   position: relative;
+}
+
+.moda__textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4D5AE5;
 }
 
 #user-name {
