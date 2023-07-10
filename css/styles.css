@@ -768,3 +768,23 @@ textarea {
   width: 1px !important;
   overflow: hidden;
 }
+
+.moda__input input {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.moda__textarea {
+  width: 100%;
+  line-height: 1.17;
+}
+
+.moda__textarea:focus {
+  border-color: #4D5AE5;
+}
+
+.moda__spam {
+  background-color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  border: none;
+  fill: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+}
