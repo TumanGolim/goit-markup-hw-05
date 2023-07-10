@@ -422,7 +422,7 @@ a {
   color: #ffffff;
 }
 
-.footer__Subscribe {
+.footer__subscribe {
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -569,9 +569,6 @@ a {
 
 .moda__chec {
   margin-bottom: 24px;
-}
-
-.imput__chec {
 }
 
 .lable__chec {
