@@ -610,6 +610,7 @@ a {
 }
 
 #user-name {
+  width: 100%;
   box-sizing: border-box;
   position: absolute;
   width: 360px;
@@ -619,6 +620,7 @@ a {
   bottom: 0%;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  border-color: #4d5ae5;
 }
 
 #user-name:hover {
@@ -745,18 +747,6 @@ textarea {
   color: #4d5ae5;
 }
 
-input:checked + .moda__input .block__svg {
-  fill: #F4F4FD;
-}
-
-input:checked + .moda__chec .moda__spam {
-  background-color: #404bbf;
-}
-
-input:checked + .moda__chec .lable__chec {
-  border: none;
-}
-
 .moda__input input {
   width: 100%;
   background-color: transparent;
@@ -766,24 +756,7 @@ input:checked + .moda__chec .lable__chec {
 }
 
 .moda__input input:focus {
-  border-color: #4D5AE5;
-}
-
-.moda__textarea {
-  width: 100%;
-  line-height: 1.17;
-}
-
-input[type="checkbox"]:checked + .moda__chec .moda__spam {
-  background-color: #404bbf;
-}
-
-input[type="checkbox"]:checked + .moda__chec .lable__chec {
-  border: none;
-}
-
-input[type="checkbox"]:checked + .moda__input .block__svg {
-  fill: #f4f4fd;
+  border-color: #4d5ae5;
 }
 
 .visually-hidden {
