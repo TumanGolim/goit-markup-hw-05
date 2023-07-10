@@ -541,10 +541,12 @@ a {
 
 .moda__input input,
 .block__input {
+  width: 100%;
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .moda__input input:focus,
@@ -558,6 +560,12 @@ a {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #4d5ae5;
+}
+
+.moda__input {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .moda__chec {
@@ -626,7 +634,6 @@ a {
 }
 
 #user-phone {
-  width: 100%;
   box-sizing: border-box;
   position: absolute;
   width: 360px;
@@ -638,7 +645,6 @@ a {
 }
 
 #user-email {
-  width: 100%;
   box-sizing: border-box;
   position: absolute;
   width: 360px;
@@ -650,7 +656,6 @@ a {
 }
 
 #user-comment {
-  width: 100%;
   box-sizing: border-box;
   position: absolute;
   width: 360px;
