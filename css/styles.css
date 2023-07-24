@@ -422,6 +422,9 @@ a {
   letter-spacing: 0.48px;
 }
 /* END FOOTER SECTION fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
+.is-hidden{
+  visibility: hidden;
+}
 .backdrop.is-hidden {
   padding: 72px 24px 24px 24px;
 }
@@ -435,7 +438,6 @@ a {
   opacity: 1;
 }
 .block.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -451,6 +453,19 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   opacity: 1;
   border-radius: 15px;
+}
+.moda__div{
+  position: fixed;
+  width: 408px;
+  height: 584px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 80px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .moda {
   margin-bottom: 8px;
@@ -669,7 +684,7 @@ textarea {
 }
 
 input:checked + .moda__input .block__svg {
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 input:checked + .moda__chec .moda__spam {
@@ -689,7 +704,7 @@ input:checked + .moda__chec .lable__chec {
 }
 
 .moda__input input:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 
 .moda__textarea {
